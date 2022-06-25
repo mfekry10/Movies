@@ -1,0 +1,139 @@
+/*===============================================================*/
+/*================ general Style
+/*===============================================================*/
+body{
+    background-color: black;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+/*===============================================================*/
+/*================ Start Side Nav 
+/*===============================================================*/
+.sidenav{
+    background-color: #000;
+    width: 300px;
+    height: 100vh;
+    top: 0px;
+    left: -240px;
+    transition: left .6s ease;
+    z-index: 1;
+}
+.sidenav .sideIcons{
+    background-color:#f8f6f6;
+    width: 60px;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.sidenav .sideIcons .logo{
+    padding: 25px 0px;
+}
+.sidenav .sideIcons .logo img{
+    width: 30px;
+}
+.sidenav .sideIcons .close{
+    display: none;
+}
+.sidenav .sideIcons .close i , .sidenav .sideIcons .open i{
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sidenav .sideIcons .icons{
+    padding: 25px 0px;
+}
+.sidenav .sideMenu{
+    height: 100vh;
+}
+.sidenav .sideMenu .list_menu{
+    height: 300px;
+    overflow: hidden;
+}
+.sidenav .sideMenu ul{
+    padding: 0px 20px;
+}
+.sidenav .sideMenu ul li{
+    padding-top: 300px;
+    transition: all 1.3s;
+}
+.padding_top{
+    padding-top: 25px !important;
+}
+.sidenav .sideMenu .social_icons{
+    padding: 30px 20px;
+}
+.sidenav .sideMenu .social_icons i{
+    color: #fff;
+    margin-right: 10px;
+}
+.sidenav .sideMenu .social_icons p{
+    color: #999;
+}
+.sidenav .sideMenu a{
+    text-decoration: none;
+    color: #fff;
+}
+/*===============================================================*/
+/*================ Start Home 
+/*===============================================================*/
+.home{
+    /* background-color: greenyellow; */
+    /* padding: 30px 0px; */
+}
+.home .form-control{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0px;
+    color: #fff;
+}
+.home .item{
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.home .overlay_item{
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.7);
+    color: #000;
+    transition: all .7s;
+    cursor: pointer;
+}
+.home .item:hover .overlay_item{
+    top: 0px;
+}
+.home .overlay_item .title{
+    font-size: 1.8rem;
+}
+
+/*===============================================================*/
+/*================ Start Contact US 
+/*===============================================================*/
+.contact .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0px;
+    color: #fff;
+}
+.contact #E_Name , .contact #E_phone , .contact #E_pass,
+.contact #E_email , .contact #E_age ,.contact #E_repass{
+    display: none;
+}
